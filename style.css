@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+
+body {
+    background-color: rgb(178, 177, 226);
+}
+
+.landing-page {
+    display: flex;
+    width: 1440px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.nav-top {
+    display: flex;
+    width: 1440px;
+    padding: 0px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frame9 {
+    display: flex;
+    padding: 10px 0px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.frame10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+header {
+    display: flex;
+    width: 1440px;
+    padding: 0px 100px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.frame13 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+#Illustration {
+    width: 600.462px;
+    height: 515px;
+    flex-shrink: 0;
+}
+
+.logotypes {
+    display: flex;
+    width: 1440px;
+    padding: 0px 100px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+button {
+    display: flex;
+    padding: 20px 35px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+
+
+.heading-subheading {
+    display: flex;
+    width: 1440px;
+    padding: 0px 100px;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #B9FF66;
+    color: #000000;
+}
+
+h2 {
+    color: #000;;
+    font-family: 'Space Grotesk'; 
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+p {
+    color: #000;
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
