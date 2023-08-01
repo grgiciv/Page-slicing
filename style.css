@@ -6,7 +6,6 @@ body {
 
 .landing-page {
     display: flex;
-    width: 1440px;
     flex-direction: column;
     align-items: flex-start;
     gap: 70px;
@@ -14,7 +13,6 @@ body {
 
 .nav-top {
     display: flex;
-    width: 1440px;
     padding: 0px 100px;
     justify-content: space-between;
     align-items: center;
