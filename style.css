@@ -98,7 +98,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     max-width: 1440px;
-    padding: 0px 100px;
     align-items: flex-start;
     align-content: center;
     align-items: center;
@@ -106,8 +105,6 @@ ul {
 }
 /*-----------------*/
 .grid {
-    padding-left: 100px;
-    padding-right: 100px;
     display: grid;
     gap: 40px;
     grid-template-columns: auto auto;
@@ -132,6 +129,7 @@ ul {
 
 h1, h2, h3, h4 {
     color: #000;
+    margin: 0px;
     font-family: 'Space Grotesk'; 
     font-style: normal;
     font-weight: 500;
@@ -200,7 +198,13 @@ p {
 
 .card {
     border-radius: 45px;
-    border: 1px solid var(--dark, #191A23);
+    border: 1px solid #191A23;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
 }
 
 .shadow {
@@ -240,20 +244,6 @@ p {
     align-content: flex-start;
 }
 
-.card {
-    padding: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-content: center;
+.wrapper {
+    padding: 0px 100px;
 }
-
-/* .card {
-    padding: 50px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-} */
