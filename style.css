@@ -6,8 +6,11 @@ body {
 
 .landing-page {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
+    align-content: center;
+    justify-content: center;
     gap: 70px;
 }
 
@@ -18,11 +21,11 @@ body {
     align-items: center;
 }
 
-.frame9 {
-    display: flex;
-    padding: 10px 0px;
-    align-items: flex-start;
-    gap: 10px;
+
+li {
+    padding-right: 40px;
+    text-decoration: none;
+    list-style: none;
 }
 
 .frame10 {
@@ -32,18 +35,30 @@ body {
     gap: 40px;
 }
 
-header {
-    display: flex;
-    width: 1440px;
-    padding: 0px 100px;
-    justify-content: space-between;
-    align-items: flex-start;
-}
+header {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    align-content: start;
+    align-items: start;
+    max-width: 1440px;
+  }
+  
+  .frame13 { grid-area: 1 / 1 / 2 / 3; }
+  
+  #Illustration { grid-area: 1 / 2 / 2 / 3; }
+  
+  
 
 .frame13 {
     display: flex;
+    flex: 1;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     gap: 35px;
 }
 
@@ -51,11 +66,12 @@ header {
     width: 600.462px;
     height: 515px;
     flex-shrink: 0;
+    display: block;
 }
 
 .logotypes {
     display: flex;
-    width: 1440px;
+    max-width: 1440px;
     padding: 0px 100px;
     justify-content: space-between;
     align-items: flex-start;
@@ -75,40 +91,105 @@ ul {
     gap: 40px;
 }
 
-
-
-
-
 .heading-subheading {
     display: flex;
-    width: 1440px;
+    max-width: 1440px;
     padding: 0px 100px;
     align-items: flex-start;
     gap: 40px;
 }
 
 .heading{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #B9FF66;
-    color: #000000;
+    border-radius: 7px;
+    background: #B9FF66;
 }
 
-h2 {
+h1, h2, h3, h4 {
     color: #000;;
     font-family: 'Space Grotesk'; 
-    font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #B9FF66; 
+}
+
 p {
     color: #000;
     font-family: 'Space Grotesk';
-    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.bigger_weight {
+    font-weight: 500; 
+}
+
+.larger_font {
+    font-size: 20px;
+}
+
+.smaller_font {
+    font-size: 18px;
+}
+
+.smallest_font {
+    font-size: 16px;
+}
+
+.higher_line {
+    line-height: 28px;
+}
+
+.color_white {
+    color: #FFF; 
+}
+
+.color_black {
+    color: #000; 
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.card {
+    border-radius: 45px;
+    border: 1px solid var(--dark, #191A23);
+}
+
+.shadow {
+    box-shadow: 0px 5px 0px 0px #191A23; 
+}
+
+.gray{
+    background: #F3F3F3; 
+}
+
+.black {
+    background: #191A23; 
+}
+
+.green {
+    background: #B9FF66; 
+}
+
+.white {
+    background: #FFF; 
 }
